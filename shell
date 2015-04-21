@@ -1,0 +1,9 @@
+#!/bin/bash
+#Where the script should be run from.
+#telnet 103.10.24.99 8084
+#If it all goes pear shaped the script will timeout after 20 seconds.
+set name [lindex $argv 0]
+echo "open 103.10.24.99 8084"
+sleep 3
+echo "xyxyxy"
+sleep 6

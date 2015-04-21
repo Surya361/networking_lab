@@ -1,0 +1,24 @@
+=====================Design=============================
+
+SERVER
+1. gets the window size, rtt, filename, from the user.
+2. Creats a packet buffer each packet containing a payload of 19 characters.
+3. Starts listening on the socket.
+4. Select will be contiously polling the socket.
+5. When there is a connection it accepts the connection, creates a new sockets and adds to the list of sockets to be polled.
+6. If there is a packet from the client the server stores it in a buffer and sends an acknowledgment packet.
+7. after rtt number of pollings the server starts sending packets.
+8. the server sends packets of seqno base to base+window if the packet has bee ack before it will skip else it will send.
+9. The server starts a timer of value rtt seconds and goes to step 4.
+
+CLIENT
+1. gets the window size, rtt, filename, from the user.
+2. Creats a packet buffer each packet containing a payload of 19 characters.
+3. Connects to the server.
+4. Select will be contiously polling the socket.
+5. When there is a connection it accepts the connection, creates a new sockets and adds to the list of sockets to be polled.
+6. If there is a packet from the client the server stores it in a buffer and sends an acknowledgment packet.
+7. after rtt number of pollings the server starts sending packets.
+8. the server sends packets of seqno base to base+window if the packet has bee ack before it will skip else it will send.
+9. The server starts a timer of value rtt seconds and goes to step 4.
+

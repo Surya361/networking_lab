@@ -1,0 +1,29 @@
+1 both the server and the browser are running HTTP 1.1
+2 en-US, en
+3 IPaddress(mysystem): 192.168.40.146 IPaddress(server): 128.119.245.12
+4 200 OK
+5 19-03-2015 5:59:01 GMT
+6 308 bytes entire packet 
+7 yes XHTML XML
+8 NO
+9 YES html file in in the responce message
+10 If-Modified-Since: Tue, 23 Sep 2003 05:35:00 GMT
+11 304 NOT MODIFIED no html file in consequent packets
+12 1
+13 1
+14 200 OK
+15 NO
+16 1. gaia.cs.umass.edu
+   2. www.aw-bc.com
+   3. manic.cs.umass.edu
+17 paralle the request are sent then the data is received
+18 401 Autherization Required
+19 Autherization Basic ZXRoLXN0dWRlbnRzOm5ldHdvcmtz
+
+TCP
+1 192.168.40.146 1161
+2 128.119.254.12 80 1161
+4 0 flag-value 000000000010
+5 0, 1, when syn packet was received, flag with both syn and ack set
+6 164041
+7 164041 1 1 1 164091  
